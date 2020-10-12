@@ -12,7 +12,7 @@
   "javascript.validate.enable": false,
   "extensions.ignoreRecommendations": true,
   "files.autoSave": "off",
-  "typescript.tsc.autoDetect": "off",
+  "typescript.tsc.autoDetect": "on",
   "npm.autoDetect": "off",
   "debug.allowBreakpointsEverywhere": true,
   "html.autoClosingTags": false
