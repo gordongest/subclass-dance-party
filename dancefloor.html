@@ -11,20 +11,22 @@
     <script src="src/comicDancer.js"></script>
   </head>
   <body>
-    <div class="topbar">
-      <span class="title">object dance party</span>
-    </div>
-    <div class="navbar">
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a friendly dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeAnimalDancer">add an itchy dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeComicDancer">add a frickin awesome dancer</a>
-      <a href="#" class="lineDanceButton effectsButton" data-effect-function-name="lineDance">line dance</a>
-      <a href="#" class="intensifyButton effectsButton" data-effect-function-name="intensify">*intensify*</a>
-      <a href="#" class="clearButton" data-effect-function-name="clear">clear the floor</a>
-    </div>
-    <div class="bottombar">
-      <audio src="/music/BidibodiBidibu.mp3" autoplay loop controls></audio>
-    </div>
+
+      <div class="topbar">
+        <span class="title">object dance party</span>
+      </div>
+      <div class="navbar">
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a friendly dancer</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeAnimalDancer">add an itchy dancer</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeComicDancer">add a frickin awesome dancer</a>
+        <a href="#" class="lineDanceButton effectsButton" data-effect-function-name="lineDance">line dance</a>
+        <a href="#" class="intensifyButton effectsButton" data-effect-function-name="intensify">*intensify*</a>
+        <a href="#" class="clearButton" data-effect-function-name="clear">clear the floor</a>
+        <audio id="bottombar" src="/music/BidibodiBidibu.mp3" autoplay loop controls preload="none"></audio>
+      </div>
+
+
+
 
     <script src="src/init.js"></script>
   </body>

@@ -33,10 +33,9 @@ span {
   border-bottom: 1px solid aqua;
   padding: 20px 0 20px 0;
 }
-.bottombar{
+#bottombar{
   display:flex;
   /* bottom:0px; */
-  align-self: bottom;
 }
 .title{
   /* background-color: #777; */
@@ -89,4 +88,7 @@ button {
 .navbar a:hover {
   color: aqua;
   border: aqua;
+}
+#bottombar {
+
 }
