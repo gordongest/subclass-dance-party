@@ -34,23 +34,23 @@ $(document).ready(function() {
     window.dancers.push(dancer);
   });
 
-  $('.lineDanceButton').on('click', function() {
+  $('.lineDanceButton').on('click', function(event) {
     // console.log(window.dancers);
     for (let i = 0; i < window.dancers.length; i++) {
       let currentDancer = window.dancers[i];
-      currentDancer.style.top = 900 + 'px';
+      $(currentDancer.$node).css({top: 500});
     }
-    // var lineDanceFunctionName = $(this).data('effect-function-name');
-    // for (let i = 0; i < window.dancers.length; i++) {
-    //   console.log(window.dancers[i]);
-    // }
   });
-  $('.clearButton').on('click', function() {
-    console.log($('.body'));
-    $('.body').empty();
+  $('.clearButton').on('click', function(event) {
+    for (let i = 0; i < window.dancers.length; i++) {
+      // console.log(window.dancers[i]);
+      let currentDancer = window.dancers[i];
+      // console.log(currentDancer.$node);
+      $(currentDancer.$node).remove();
+    }
   });
 
-  $('.intensify-button').on('click', function(event) {
+  // $('.intensify-button').on('click', function(event) {
 
-  });
+  // });
 });

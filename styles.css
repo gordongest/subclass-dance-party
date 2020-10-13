@@ -31,7 +31,7 @@ span {
   align-items: center;
   justify-content:space-evenly;
   border-bottom: 1px solid aqua;
-  padding: 20px;
+  padding: 20px 0 20px 0;
 }
 .bottombar{
   display:flex;
@@ -66,7 +66,7 @@ span {
 a {
   text-decoration: none;
   border: 2px solid aqua;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   background-color: aqua;
   border: 2px solid rgb(186, 12, 186);
