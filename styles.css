@@ -2,9 +2,12 @@ body, html{
   height:100%;
 }
 body{
-  margin: 0px;
+  margin:0px;
   background-color:#444;
-  font-size: 18px;
+  font-size:18px;
+  background-image:url('https://jamesandrewjolly.files.wordpress.com/2015/08/0729151909.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -24,4 +27,8 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+.makeAnimalDancer{
+  content:url('https://media.giphy.com/media/W6ihBYiPDjU4Ym2g6q/giphy.gif');
+  size:auto;
 }
