@@ -1,6 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  var winHeight = window.innerHeight / 2;
+
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -19,17 +21,36 @@ $(document).ready(function() {
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    console.log('dancerMakerFunction:', dancerMakerFunction);
 
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random(),
+      winHeight * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
     $(dancer.$node).addClass(dancerMakerFunctionName);
-    console.log(dancer.$node);
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+
+  $('.lineDanceButton').on('click', function() {
+    // console.log(window.dancers);
+    for (let i = 0; i < window.dancers.length; i++) {
+      let currentDancer = window.dancers[i];
+      currentDancer.style.top = 900 + 'px';
+    }
+    // var lineDanceFunctionName = $(this).data('effect-function-name');
+    // for (let i = 0; i < window.dancers.length; i++) {
+    //   console.log(window.dancers[i]);
+    // }
+  });
+  $('.clearButton').on('click', function() {
+    console.log($('.body'));
+    $('.body').empty();
+  });
+
+  $('.intensify-button').on('click', function(event) {
+
   });
 });

@@ -3,6 +3,7 @@
   <head>
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Staatliches&display=swap" rel="stylesheet">
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
@@ -12,10 +13,19 @@
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a></div>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeAnimalDancer">add an animal dancer</a></div>
-      <a href="#" class="line-dance-button" effect-function-name="lineDance">line dance</a></div>
-      <a href="#" class="intensify-button" effect-function-name="intensify">*intensify*</a></div>
+    </div>
+    <div class="navbar">
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a friendly dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeAnimalDancer">add an itchy dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeComicDancer">add a frickin awesome dancer</a>
+      <a href="#" class="lineDanceButton effectsButton" data-effect-function-name="lineDance">line dance</a>
+      <a href="#" class="intensifyButton effectsButton" data-effect-function-name="intensify">*intensify*</a>
+      <a href="#" class="clearButton" data-effect-function-name="clear">clear the floor</a>
+    </div>
+    <div class="bottombar">
+      <audio src="/music/BidibodiBidibu.mp3" autoplay loop controls></audio>
+    </div>
+
     <script src="src/init.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+  width:100%;
 }
 body{
   margin:0px;
@@ -8,27 +9,84 @@ body{
   background-image:url('https://jamesandrewjolly.files.wordpress.com/2015/08/0729151909.jpg');
   background-size:cover;
   background-repeat:no-repeat;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: aqua;
 }
-.title, .addDancerButton{
+span {
+  display:inline-block;
+  font-size: 30px;
+}
+.title, .addDancerButton .effectsButton{
   padding:5px 12px;
-  float:right;
+  /* float:center; */
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  width:100%;
+  background-color: rgb(186, 12, 186);
+  display:flex;
+  align-items: center;
+  justify-content:space-evenly;
+  border-bottom: 1px solid aqua;
+  padding: 20px;
+}
+.bottombar{
+  display:flex;
+  /* bottom:0px; */
+  align-self: bottom;
 }
 .title{
-  background-color: #777;
+  /* background-color: #777; */
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /* border:10px solid red;
+  border-radius:10px; */
   position:absolute;
+}
+
+.makeBlinkyDancer{
+  content:url('https://i.pinimg.com/originals/9b/ed/57/9bed57fbb22f78b3aae64b9ab7a952ac.gif');
+  height:350px;
+  width:350px;
 }
 .makeAnimalDancer{
   content:url('https://media.giphy.com/media/W6ihBYiPDjU4Ym2g6q/giphy.gif');
-  size:auto;
+  height:350px;
+  width:350px;
+}
+.makeComicDancer{
+  content:url('https://media.giphy.com/media/SUtvUAbKeBXiVdqCMB/giphy.gif');
+  height:350px;
+  width:350px;
+}
+
+a {
+  text-decoration: none;
+  border: 2px solid aqua;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: aqua;
+  border: 2px solid rgb(186, 12, 186);
+}
+a:hover {
+  background-color: rgb(186, 12, 186);
+}
+button {
+  border: 1px solid aqua;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding-top: 20px;
+}
+.navbar a {
+  color: purple;
+}
+.navbar a:hover {
+  color: aqua;
+  border: aqua;
 }

@@ -1,7 +1,5 @@
 var makeComicDancer = function(top, left, timeBetweenSteps) {
-
   makeDancer.call(this, top, left, timeBetweenSteps);
-
 };
 
 makeComicDancer.prototype = Object.create(makeBlinkyDancer.prototype);
@@ -14,5 +12,5 @@ makeComicDancer.prototype.step = function() {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  this.$node.toggle();
+  this.$node.fadeToggle(this.timeBetweenSteps);
 };
