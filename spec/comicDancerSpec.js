@@ -13,6 +13,7 @@ describe('comicDancer', function() {
   });
 
   it('should have a step function that makes its node blink', function() {
+    console.log(comicDancer.$node);
     sinon.spy(comicDancer.$node, 'toggle');
     comicDance.step();
     expect(comicDancer.$node.toggle.called).to.be.true;
