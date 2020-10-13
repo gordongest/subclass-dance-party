@@ -2,7 +2,6 @@ var makeComicDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
 
-  console.log(this.$node);
 };
 
 makeComicDancer.prototype = Object.create(makeBlinkyDancer.prototype);
