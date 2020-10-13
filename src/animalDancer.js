@@ -1,5 +1,5 @@
-class makeAnimalDancer extends makeDancer {
-  constructor() {
-    super();
-  }
-}
+var makeAnimalDancer = function(top, left, timeBetweenSteps) {
+  makeDancer.call(this, top, left, timeBetweenSteps);
+};
+
+makeAnimalDancer.prototype = Object.create(makeDancer.prototype);
