@@ -30,13 +30,13 @@ span {
   display:flex;
   align-items: center;
   justify-content:space-evenly;
-  border-bottom: 1px solid aqua;
+  border-bottom: 2px solid aqua;
   padding: 20px 0 20px 0;
 }
-#bottombar{
+/* #bottombar{
   display:flex;
   /* bottom:0px; */
-}
+/* } */
 .title{
   /* background-color: #777; */
 }
@@ -48,18 +48,18 @@ span {
 
 .makeBlinkyDancer{
   content:url('https://i.pinimg.com/originals/9b/ed/57/9bed57fbb22f78b3aae64b9ab7a952ac.gif');
-  height:350px;
-  width:350px;
+  height:450px;
+  width:450px;
 }
 .makeAnimalDancer{
   content:url('https://media.giphy.com/media/W6ihBYiPDjU4Ym2g6q/giphy.gif');
-  height:350px;
-  width:350px;
+  height:450px;
+  width:450px;
 }
 .makeComicDancer{
   content:url('https://media.giphy.com/media/SUtvUAbKeBXiVdqCMB/giphy.gif');
-  height:350px;
-  width:350px;
+  height:450px;
+  width:450px;
 }
 
 a {
@@ -88,7 +88,4 @@ button {
 .navbar a:hover {
   color: aqua;
   border: aqua;
-}
-#bottombar {
-
 }

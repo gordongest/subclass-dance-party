@@ -1,7 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  var winHeight = window.innerHeight / 2;
+
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -24,8 +24,10 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
+    var winHeight = Math.max(($('body').width() * Math.random()), 250);
+
     var dancer = new dancerMakerFunction(
-      winHeight * Math.random(),
+      winHeight,
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
@@ -35,22 +37,27 @@ $(document).ready(function() {
   });
 
   $('.lineDanceButton').on('click', function(event) {
-    // console.log(window.dancers);
     for (let i = 0; i < window.dancers.length; i++) {
       let currentDancer = window.dancers[i];
-      $(currentDancer.$node).css({top: 500});
+      $(currentDancer.$node).animate({top: 350}, 250);
     }
   });
+
   $('.clearButton').on('click', function(event) {
     for (let i = 0; i < window.dancers.length; i++) {
-      // console.log(window.dancers[i]);
       let currentDancer = window.dancers[i];
-      // console.log(currentDancer.$node);
       $(currentDancer.$node).remove();
     }
   });
 
-  // $('.intensify-button').on('click', function(event) {
-
-  // });
+  /* this doesn't work yet */
+  $('.intensify-button').on('click', function(event) {
+    for (let i = 0; i < window.dancers.length; i++) {
+      let currentDancer = window.dancers[i];
+      $(currentDancer.$node).animate({
+        height: '500px',
+        width: '500px'
+      });
+    }
+  });
 });
