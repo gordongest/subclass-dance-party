@@ -39,7 +39,7 @@ $(document).ready(function() {
   $('.lineDanceButton').on('click', function(event) {
     for (let i = 0; i < window.dancers.length; i++) {
       let currentDancer = window.dancers[i];
-      $(currentDancer.$node).animate({top: 350}, 250);
+      $(currentDancer.$node).animate({top: 400}, 250);
     }
   });
 
